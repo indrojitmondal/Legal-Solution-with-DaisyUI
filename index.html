@@ -1,23 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Legal Solutions with DaisyUI</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              }
-            }
-          }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Legal Solutions</title>
+  <script src="https://kit.fontawesome.com/b5a83736f2.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          clifford: '#da373d',
+          dark3: 'rgb(112, 112, 112)',
+          primary: 'rgb(182, 140, 90)',
         }
-    </script>
+      }
+    }
+  }
+</script>
 </head>
 <body>
-    <h1>Welcome to Legal Solutions</h1>
+  <main class="md:container mx-auto px-16 lg:px-28 ">
+    <!-- header section -->
+    <section class="mt-10 ">
+  
+      <div class="flex justify-between bg-base-10">
+     
+            <img class=" " src="./images/logo2.png" alt=""> 
+   
+        <div class=" hidden lg:flex ">
+          <ul class="menu menu-horizontal px-1 text-dark3 text-lg">
+            <li><a>Home</a></li>
+            <li><a>Services
+              <i class="fa-solid fa-greater-than text-sm "></i>
+              
+            </a> 
+            
+            </li>
+            <li><a>Cases
+
+              <i class="fa-solid fa-greater-than text-sm "></i>
+            </a></li>
+            <li><a>Blog
+
+              <i class="fa-solid fa-greater-than text-sm "></i>
+            </a></li>
+            <li><a>Contact Us
+
+              <i class="fa-solid fa-greater-than text-sm "></i>
+            </a></li>
+          
+          </ul>
+        </div>
+        <div class="">
+          <a class="btn bg-primary text-white text-lg">Free Consultation</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
 </body>
 </html>
